@@ -1,4 +1,65 @@
+@font-face {
+	font-family: 'Abrosia';
+	src: url('./assets/fonts/Abrosia.ttf') format(truetype);
+}
+
 *{
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+}
+
+html{
+	color: #ececec;
+	background: #242424;
+}
+
+.header h1{
+	margin-bottom: 10px;
+}
+.header h2{
+	margin-bottom: 35px;
+}
+.header h3{
+	margin-bottom: 10px;
+}
+
+button{
+	padding: 8px 15px;
+	color: #ececec;
+	background: #242424;
+	border: 1px solid #242424;
+	border-radius: 5px;
+	transition: 0.5s
+}
+button:hover{
+	cursor: pointer;
+	border: 1px solid #0b7fc7;
+	transition: 0.5s;
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(45deg, #0b7fc7, #1d1d1d);
+}
+
+.header-txt{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 60%;
+}
+
+.header-txt span{
+	color: #63baf1;
+}
+
+#meaning{
+	color: inherit;
+	text-shadow: 0 0 10px #ececec;
 }
