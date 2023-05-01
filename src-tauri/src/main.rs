@@ -15,7 +15,6 @@ fn main() {
       println!("{}, {argv:?}, {cwd}", app.package_info().name);
       app.emit_all("single-instance", Payload { args: argv, cwd }).unwrap();
     })) // For Blocking Multiple Instances
-    .plugin(tauri_plugin_window_state::Builder::default().build()) // For Saving Window States
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

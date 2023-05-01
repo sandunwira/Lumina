@@ -16,6 +16,16 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true
       }
     },
     "bundle": {
@@ -61,9 +71,9 @@
     },
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": true,
+        "fullscreen": true,
         "title": "Lumina",
+        "decorations": false,
         "center": true
       }
     ]

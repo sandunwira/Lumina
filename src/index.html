@@ -2,16 +2,41 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/titlebar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
 	<script type="module" src="/main.js" defer></script>
+
+	<link rel="preload" href="./assets/fonts/Gilroy-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="stylesheet" type="css" crossorigin>
 </head>
 
 <body>
 
+	<!-- Titlebar Start ================================================-->
+	<div class="titlebar">
+		<div class="titlebar-container">
+			<div class="title">
+				<p>Lumina</p>
+			</div>
+
+			<div class="controls">
+				<div class="icon" id="titlebar-minimize">
+					<i class="fa-solid fa-window-minimize"></i>
+				</div>
+				<div class="icon" id="titlebar-close">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================================================== Titlebar End -->
+
+	<!-- Header Start ==================================================-->
 	<div class="header">
 		<div class="header-txt">
 			<h1>Hello, This is <span>Lumina</span>!</h1>
@@ -21,6 +46,7 @@
 			<button id="count">Click Me!</button>
 		</div>
 	</div>
+	<!--==================================================== Header End -->
 
 </body>
 

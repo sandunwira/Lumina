@@ -1,15 +1,16 @@
 @font-face {
-	font-family: 'Abrosia';
-	src: url('./assets/fonts/Abrosia.ttf') format(truetype);
+	font-family: 'Gilroy';
+	src: url('./assets/fonts/Gilroy-Light.otf') format(opentype);
 }
 
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Arial';
+	font-family: 'Gilroy', sans-serif;
 }
 
 html{
+	user-select: none;
 	color: #ececec;
 	background: #242424;
 }
