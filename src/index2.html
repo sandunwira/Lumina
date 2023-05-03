@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="css/titlebar.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
 	<script type="module" src="/main.js" defer></script>
@@ -23,9 +24,24 @@
 	<!--================================================== Titlebar End -->
 
 	<!-- Header Start ==================================================-->
-	<div class="banner" style="background: url('https://i.giphy.com/media/PmTWHSzTo53A4/giphy.webp'); background-size: cover;">
+	<div class="banner" style="background: url('https://i.giphy.com/media/KZFrf9JusXzmpnPsT6/giphy.webp'); background-size: cover;">
+		<div class="banner-container">
+			<div class="info-bar">
+				<div class="profile-container">
+					<div id="pfp"></div>
+					<div id="name">
+						<div id="greeting"></div>
+						<h2>Sandun</h2>
+					</div>
+				</div>
+				<div id="time-container"></div>
+			</div>
+		</div>
 		<a href="template.html">Template</a>
 	</div>
+	<script src="js/time.js"></script>
+	<script src="js/profile.js"></script>
+	<script src="js/greeting.js"></script>
 	<!--==================================================== Header End -->
 
 </body>

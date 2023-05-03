@@ -35,6 +35,12 @@ html{
 	background: #242424;
 }
 
+a{
+	color: #ececec;
+	text-decoration-color: #ececec;
+	text-underline-offset: 2px;
+}
+
 .header h1{
 	margin-bottom: 10px;
 }
@@ -85,9 +91,3 @@ button:hover{
 	text-shadow: 0 0 10px #ececec;
 }
 
-.banner{
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
