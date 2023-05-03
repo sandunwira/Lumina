@@ -91,14 +91,3 @@ button:hover{
 	align-items: center;
 	justify-content: center;
 }
-
-.apps-slide{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-.app-thumbnail{
-	margin: 0 10px;
-}
