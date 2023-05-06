@@ -26,6 +26,13 @@
         "minimize": true,
         "unmaximize": true,
         "unminimize": true
+      },
+      "fs": {
+        "all": false,
+        "exists": true,
+        "readDir": true,
+        "readFile": true,
+        "writeFile": true
       }
     },
     "bundle": {
