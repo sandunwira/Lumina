@@ -20,6 +20,10 @@
 	align-items: center;
 	padding-left: 10px;
 }
+.titlebar img{
+	height: 15px;
+	margin-right: 5px;
+}
 .titlebar .controls{
 	display: flex;
 	align-items: center;

@@ -1,6 +1,7 @@
 function generateHTML() {
 	var html = '<div class="titlebar-container">';
 	html += '<div class="title">';
+	html += '<img src="./assets/images/logo.svg">';
 	html += '<p>Lumina</p>';
 	html += '</div>';
 	html += '<div class="controls">';
