@@ -1,18 +1,63 @@
+.landingHeader{
+	height: 100vh;
+	background: linear-gradient(315deg, #5A5A5A, #4C647E);
+}
+
+.landingHeader-container{
+	width: 80%;
+	height: 70%;
+	gap: 40px;
+}
+.landingHeader-img{
+	height: auto;
+	width: fit-content;
+}
+.landingHeader-img img{
+	height: 120px;
+}
+.landingHeader-txt{
+	text-align: center;
+	gap: 8px;
+}
+.landingHeader-txt button{
+	margin-top: 20px;
+}
+
+.header{
+	height: 100vh;
+	background: linear-gradient(45deg, #0b7fc7, #1d1d1d);
+}
+.header h1{
+	margin-bottom: 10px;
+}
+.header h2{
+	margin-bottom: 35px;
+}
+.header h3{
+	margin-bottom: 10px;
+}
+
+.header-txt{
+	width: 80%;
+	height: 60%;
+}
+.header-txt span{
+	color: #63BAF1;
+}
+
+#meaning{
+	color: inherit;
+	text-shadow: 0 0 10px #ECECEC;
+}
+
 .banner{
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 }
 .banner-container{
 	margin-top: 25px;
 	height: 85%;
 	width: 95%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 2px dashed #fff;
+	border: 2px dashed #FFFFFF;
 }
 .info-bar{
 	width: 100%;
@@ -24,9 +69,9 @@
 }
 .profile-container{
 	padding: 10px 20px;
-	border: 3px solid #fff;
+	border: 3px solid #FFFFFF;
 	border-radius: 20px;
-	background: #8d8d8d7a;
+	background: #8D8D8D7A;
 	backdrop-filter: blur(5px);
 }
 #username{
@@ -34,8 +79,8 @@
 }
 #time-container{
 	padding: 10px 20px;
-	border: 3px solid #fff;
+	border: 3px solid #FFFFFF;
 	border-radius: 20px;
-	background: #8d8d8d7a;
+	background: #8D8D8D7A;
 	backdrop-filter: blur(5px);
 }
