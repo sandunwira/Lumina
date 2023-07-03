@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("Montserrat.ttf") format("truetype");
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: #242424;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	background: #4D4D4D;
+	border: 10px solid #4D4D4D;
+	border-radius: 10px;
+}
+
+.square {
+	width: 135px;
+	height: 135px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #242424;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+svg {
+	stroke-width: 15px;
+	stroke: #1C508C;
+	fill: none;
+	stroke-linecap: round;
+}
+
+.cross {
+	stroke: #9C1E1E;
+}
+
+.result {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 3em;
+	font-weight: bold;
+	background-color: #242424B3;
+	color: #FFFFFF;
+}
+
+button {
+	padding: 8px 16px;
+	margin: 10px;
+	font-size: 0.5em;
+	font-weight: bold;
+	border-radius: 10px;
+	color: #ECECEC;
+	background: #4AA449;
+	border: 2px solid #5FD761;
+	transition: 0.4s;
+}
+button:hover{
+	color: #1C1C1C;
+	background: #BFBFBF;
+	border: 2px solid #FFFFFF;
+	cursor: pointer;
+	transition: 0.4s;
+}

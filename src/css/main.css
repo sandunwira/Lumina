@@ -84,3 +84,46 @@
 	background: #8D8D8D7A;
 	backdrop-filter: blur(5px);
 }
+
+#gamecard{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+	margin: 10px;
+	transition: 0.3s;
+}
+#gamecard:hover{
+	outline: 4px solid #ECECEC;
+	outline-offset: 2px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#gamecard:hover p{
+	color: #ffffff;
+	background: linear-gradient(45deg, #2eafff90, #19649290);
+	backdrop-filter: blur(3px);
+	border-radius: 10px;
+	visibility: visible;
+}
+
+#gamecard p{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 5px;
+	visibility: hidden;
+}
+
+.gameContainer{
+	flex-wrap: wrap;
+	padding: 0 20px;
+}

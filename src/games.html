@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="css/titlebar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
+	<script type="module" src="/main.js" defer></script>
+
+	<link rel="preload" href="./assets/fonts/Gilroy-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./assets/images/logo.svg" as="image" type="svg" crossorigin>
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="stylesheet" type="css" crossorigin>
+</head>
+
+<body>
+
+	<!-- Titlebar Start ================================================-->
+	<div class="titlebar" id="titlebar"></div>
+	<script src="js/titlebar.js"></script>
+	<!--================================================== Titlebar End -->
+
+	<!-- Header Start ==================================================-->
+	<div class="banner flexContainer flexCol" style="background: url('https://i.giphy.com/media/KZFrf9JusXzmpnPsT6/giphy.webp'); background-size: cover;">
+		<div class="banner-container flexContainer flexCol">
+			<h1>GAMES</h1>
+			<div class="flexContainer flexRow gameContainer">
+				<div id="gamecard" onclick="window.location.href='./games/BullsEye.html'" style="background: url('./assets/images/games/BullsEye.png'); background-size: cover;">
+					<p>Bullseye</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/CatJumper/index.html'" style="background: url('./assets/images/games/CatJumper.png'); background-size: cover;">
+					<p>Cat Jumper</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/ClickOnTheCircle/index.html'" style="background: url('./assets/images/games/ClickOnTheCircle.png'); background-size: cover;">
+					<p>Click On The Circle</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/CubNPup/index.html'" style="background: url('./assets/images/games/CubNPup.png'); background-size: cover;">
+					<p>Cub n Pup</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/Minesweeper/index.html'" style="background: url('./assets/images/games/Minesweeper.png'); background-size: cover;">
+					<p>Minesweeper</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/RememberCard/index.html'" style="background: url('./assets/images/games/RememberCard.png'); background-size: cover;">
+					<p>Remember Card</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/RockPaperScissors/index.html'" style="background: url('./assets/images/games/RockPaperScissors.png'); background-size: cover;">
+					<p>Rock Paper Scissors</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/SnakesAndLadders/index.html'" style="background: url('./assets/images/games/SnakesAndLadders.png'); background-size: cover;">
+					<p>Snakes & Ladders</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/TheCube/index.html'" style="background: url('./assets/images/games/TheCube.png'); background-size: cover;">
+					<p>The Cube</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/TicTacToe/index.html'" style="background: url('./assets/images/games/TicTacToe.png'); background-size: cover;">
+					<p>Tic Tac Toe</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/TiltingMaze/index.html'" style="background: url('./assets/images/games/TiltingMaze.png'); background-size: cover;">
+					<p>Tilting Maze</p>
+				</div>
+				<div id="gamecard" onclick="window.location.href='./games/TowerBlocks/index.html'" style="background: url('./assets/images/games/TowerBlocks.png'); background-size: cover;">
+					<p>Tower Blocks</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--==================================================== Header End -->
+
+</body>
+
+</html>

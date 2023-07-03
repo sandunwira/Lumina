@@ -1,0 +1,167 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+:root {
+  --letter-box: 32px;
+  --font-size: 16px;
+  --columns: 15;
+  --rows: 15;
+  --gap: 0px;
+}
+
+.word-search {
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 500px));
+  width: calc(100% - 2rem);
+  max-width: 500px;
+}
+
+.debug {
+  width: calc( 		calc(var(--letter-box) * var(--columns)) + 			calc(var(--gap) * calc(var(--columns) - 1)) 	);
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: fit-content;
+  padding: 1rem;
+  color: white;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.word-search__grid,
+.word-search__letters,
+.word-search__highlights {
+  width: calc( 		calc(var(--letter-box) * var(--columns)) + 			calc(var(--gap) * calc(var(--columns) - 1)) 	);
+  height: calc( 		calc(var(--letter-box) * var(--rows)) + 			calc(var(--gap) * calc(var(--rows) - 1)) 	);
+  display: block;
+}
+
+.word-search__grid {
+  position: relative;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.word-search__letters {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), var(--letter-box));
+  grid-template-rows: repeat(var(--columns), var(--letter-box));
+  gap: var(--gap);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+}
+
+.word-search__letter {
+  font-size: var(--font-size);
+  width: var(--letter-box);
+  height: var(--letter-box);
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 2rem;
+  color: black;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.word-search__highlights {
+  position: relative;
+}
+
+.word-search__highlight {
+  width: var(--letter-box);
+  height: var(--letter-box);
+  border-radius: 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.word-search__highlight--placed {
+  border: 2px solid rgba(255, 0, 0, 0.75);
+}
+
+.words-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 500px;
+}
+
+.word .word__value {
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+.word:nth-child(3n+2) {
+  text-align: center;
+}
+
+.word:nth-child(3n+3) {
+  text-align: right;
+}
+
+.word__value::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  top: calc(50% - 1px);
+  transition: 200ms width ease-in-out;
+}
+
+.word--found .word__value::after {
+  width: 100%;
+}
+
+.end {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.end__content {
+  display: flex;
+  max-width: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.end__button {
+  appearance: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: 2px black solid;
+  background-color: transparent;
+  cursor: pointer;
+}

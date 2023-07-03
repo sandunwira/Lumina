@@ -1,0 +1,80 @@
+@font-face {
+	font-family: "Press Start 2P";
+	src: url("PressStart2P.ttf") format("truetype");
+}
+
+#src img {
+	display: none;
+}
+
+#canvas {
+	width: 512px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+	top: 0;
+	height: 350px;
+	font-family: "Press Start 2P", cursive;
+	color: #343434;
+}
+
+#score {
+	display: flex;
+	justify-content: space-around;
+}
+
+#pause {
+	backdrop-filter: contrast(0) brightness(500%);
+	position: relative;
+	z-index: 99;
+	width: 512px;
+	height: 320px;
+	margin-top: -320px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+#center {
+	text-align: center;
+}
+
+#msg {
+	color: #343434;
+	width: 100%;
+	text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+		-1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+#btt {
+	width: 44px;
+	height: 44px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAARhJREFUWEftmUESgyAMReVOcv8DwJ1wlc5IJ/2B/tgGdYshz2cUJqQt2JWC8W4QuLXWrnyolNJHpnWAxSx6YrZ9lFc1jALZoDIfyvsGrAXs++5ay7XWE4vGERf4V2b70kKmX4bDA3vXLPpoxXQvUjW8LHApBck6jeecTfe7GQ4DLKBWY6LVGkc3bE3cv39rHA3YmhAVKprnvsDInHX8MsNWIHTfA+y90j2GlzWMXq328aE42n94duUajaMDI0OzZiXuvsCj28netHV3RzMcDnh0X4uWaG2cZjgssDc43fDfAQuQ9xJ9n84Pand6m0Y9NeGL273sawk1lmf/rygO5Y3fgddMIzOscXSmss4pEssYex5omJ3w2/kOlQEKS+bijMQAAAAASUVORK5CYII=);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+#btt:hover {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAARtJREFUWEftmUsOwyAMBes7hfsfgNyJqpW8ceU8Ez0oTtItGMYTfnLlBX7btjXUh9m+77scjXfY+AlMB8y0xxgLGmZMwhzDBW6tfdeuiExNCs2bH9jLcPTms6eDx/FjeHlgNeedf6PN2g2JOOQywLPNItPK4xq+LHCtteteKKWE+tu1TDOcBlhBo8ZUazSObjg6sf3+0TgacHRCtFDROPcFRuai7dMMR4FQvwd49E33GL6sYfRpvc2H4mjn8NmbqzeODowMnTWrcfcF7n1OWtPR1x3NcDrg3nctuqK9dprhtMCjwemGlwNWoNFXNKpHWI58lR+b4fLFwPTAmgCqhJ89X1Ecmjd/BR4Z+Hf71D9cGMlC4FXOYU02HfAbnwDHMA3nCi0AAAAASUVORK5CYII=);
+}
+
+#copy {
+	font-family: "Press Start 2P", cursive;
+	position: absolute;
+	bottom: 10px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #343434;
+	width: fit-content;
+	padding: 0 6px;
+	font-weight: 600;
+	font-size: 10px;
+	opacity: 70%;
+}
