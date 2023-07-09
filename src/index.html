@@ -19,32 +19,31 @@
 
 <body>
 
-	<!-- Titlebar Start ================================================-->
-	<div class="titlebar" id="titlebar"></div>
-	<script src="js/titlebar.js"></script>
-	<!--================================================== Titlebar End -->
-
 	<!-- Header Start ==================================================-->
-	<div class="landingHeader flexContainer flexCol">
-		<div class="landingHeader-container flexContainer flexCol">
-			<div class="landingHeader-img">
-				<img src="./assets/images/logo-text.svg">
-			</div>
-			<div class="landingHeader-txt flexContainer flexCol">
-				<h1>Hello, This is Lumina!</h1>
-				<h2>Your cool place :)</h2>
-	
-				<div>
-					<button id="titlebar-close">
+	<div class="banner flexContainer flexCol" id="lockScreen">
+		<div class="lockScreenContainer flexContainer flexCol">
+			<div class="flexContainer flexRow lockInfoContainer">
+				<div class="flexContainer flexCol clockContainer">
+					<div id="time-container"></div>
+					<div id="date-container"></div>
+				</div>
+				<div class="flexContainer flexRow lockButtons">
+					<button id="bgChangeBtn" oncontextmenu="window.location.reload();" title="Change Background">
+						<i class="fa-regular fa-image"></i>
+					</button>
+					<button id="quitBtn" title="Quit">
 						<i class="fa-solid fa-power-off"></i>
 					</button>
-					<button onclick="window.location.href='index2.html'">
-						<i class="fa-solid fa-angle-right"></i>
+					<button id="loginBtn" title="Continue" onclick="window.location.href='./index2.html'">
+						<i class="fa-solid fa-chevron-right"></i>
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="js/date.js"></script>
+	<script src="js/time.js"></script>
+	<script src="js/script.js"></script>
 	<!--==================================================== Header End -->
 
 </body>

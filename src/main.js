@@ -4,12 +4,9 @@ document.getElementById('titlebar-minimize').addEventListener('click', () => app
 document.getElementById('titlebar-close').addEventListener('click', () => appWindow.close())
 // ================================================================================== TITLEBAR END == //
 
-// == CLICK-COUNT START ============================================================================= //
-const countButton = document.getElementById("count");
-let clickCount = 0;
-
-countButton.addEventListener("click", () => {
-	clickCount++;
-	countButton.innerHTML = `Click Count: <b>${clickCount}</b>`;
+// == DISABLE CONTEXT MENU START ==================================================================== //
+document.addEventListener('contextmenu', function (event) {
+	event.preventDefault();
 });
-// =============================================================================== CLICK-COUNT END == //
+// ====================================================================== DISABLE CONTEXT MENU END == //
+

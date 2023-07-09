@@ -1,6 +1,6 @@
 .landingHeader{
 	height: 100vh;
-	background: linear-gradient(315deg, #5A5A5A, #4C647E);
+	background: linear-gradient(45deg, #304c68, #19232e);
 }
 
 .landingHeader-container{
@@ -54,10 +54,11 @@
 	height: 100vh;
 }
 .banner-container{
+	justify-content: flex-start;
 	margin-top: 25px;
 	height: 85%;
 	width: 95%;
-	border: 2px dashed #FFFFFF;
+	/* border: 2px dashed #FFFFFF; */
 }
 .info-bar{
 	width: 100%;
@@ -77,35 +78,103 @@
 #username{
 	width: fit-content;
 }
-#time-container{
-	padding: 10px 20px;
-	border: 3px solid #FFFFFF;
-	border-radius: 20px;
-	background: #8D8D8D7A;
-	backdrop-filter: blur(5px);
+
+.clockContainer{
+	align-items: flex-start;
 }
+#time-container h1{
+	font-size: 85px;
+	font-family: 'GilroyExtraBold', sans-serif;
+}
+#date-container h1{
+	font-size: 40px;
+}
+
+#lockScreen{
+	background: linear-gradient(45deg, #19232e, #304c68);
+}
+
+.lockScreenContainer{
+	justify-content: flex-end;
+	height: 85%;
+	width: 95%;
+	/* border: 2px dashed #FFFFFF; */
+}
+
+.lockInfoContainer{
+	width: 95%;
+	justify-content: space-between;
+}
+
+.lockButtons{
+	height: 100%;
+	align-items: flex-end;
+	gap: 30px;
+}
+.lockButtons button{
+	width: 70px;
+	height: 70px;
+	border-radius: 25px;
+	scale: 1.0;
+	transition: 0.3s;
+}
+.lockButtons button:hover{
+	scale: 1.05;
+	transition: 0.3s;
+}
+.lockButtons i{
+	font-size: 20px;
+}
+
+#bgChangeBtn{
+	background: #BBFFD666;
+	border: 2px solid #FFFFFF;
+	transition: 0.3s;
+}
+#bgChangeBtn:hover{
+	filter: drop-shadow(0 0 15px #BBFFD6A5);
+	transition: 0.3s;
+}
+
+#quitBtn{
+	background: #FFBBBB66;
+	border: 2px solid #FFFFFF;
+}
+#quitBtn:hover{
+	filter: drop-shadow(0 0 15px #FFBBBBA5);
+	transition: 0.3s;
+}
+
+#loginBtn{
+	background: #6590BB66;
+	border: 2px solid #FFFFFF;
+}
+#loginBtn:hover{
+	filter: drop-shadow(0 0 15px #6590BBA5);
+	transition: 0.3s;
+}
+
 
 #gamecard{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 150px;
-	height: 150px;
+	width: 180px;
+	height: 180px;
 	border-radius: 10px;
-	margin: 10px;
-	transition: 0.3s;
+	transition: 0.25s;
 }
 #gamecard:hover{
 	outline: 4px solid #ECECEC;
-	outline-offset: 2px;
+	outline-offset: 3px;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.25s;
 }
 
 #gamecard:hover p{
 	color: #ffffff;
-	background: linear-gradient(45deg, #2eafff90, #19649290);
-	backdrop-filter: blur(3px);
+	background: linear-gradient(45deg, #0c243390, #1c71a590);
+	backdrop-filter: blur(8px);
 	border-radius: 10px;
 	visibility: visible;
 }
@@ -119,11 +188,42 @@
 	font-size: larger;
 	font-weight: bold;
 	text-align: center;
-	padding: 0px 5px;
+	padding: 0px 10px;
 	visibility: hidden;
 }
 
 .gameContainer{
 	flex-wrap: wrap;
-	padding: 0 20px;
+	justify-content: flex-start;
+	gap: 30px;
+	width: 100%;
+}
+
+.gameDetails{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin-bottom: 20px;
+}
+
+.navigationTitle{
+	text-align: center;
+	font-size: 40px;
+	margin-left: 20px;
+}
+
+.navigation{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.navigation button{
+	padding: 8px 12px;
+	border: none;
+}
+.navigation button:hover{
+	background: #7da8d4;
 }

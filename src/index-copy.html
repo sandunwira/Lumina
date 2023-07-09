@@ -25,14 +25,24 @@
 	<!--================================================== Titlebar End -->
 
 	<!-- Header Start ==================================================-->
-	<div class="header flexContainer">
-		<div class="header-txt flexContainer flexCol">
-			<h1>Hello, This is <span>Lumina</span>!</h1>
-			<h2>Lumina = <span id="meaning">Light</span></h2>
-
-			<h3>Try This Thing:</h3>
-			<button id="count">Click Me!</button>
-			<a href="index2.html">Page 2</a>
+	<div class="landingHeader flexContainer flexCol">
+		<div class="landingHeader-container flexContainer flexCol">
+			<div class="landingHeader-img">
+				<img src="./assets/images/logo-text.svg">
+			</div>
+			<div class="landingHeader-txt flexContainer flexCol">
+				<h1>Hello, This is Lumina!</h1>
+				<h2>Your cool place :)</h2>
+	
+				<div>
+					<button id="titlebar-close">
+						<i class="fa-solid fa-power-off"></i>
+					</button>
+					<button onclick="window.location.href='index2.html'">
+						<i class="fa-solid fa-angle-right"></i>
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!--==================================================== Header End -->

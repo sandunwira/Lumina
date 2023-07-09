@@ -2,6 +2,10 @@
 	font-family: 'Gilroy';
 	src: url('./assets/fonts/Gilroy-Light.otf') format(opentype);
 }
+@font-face {
+	font-family: 'GilroyExtraBold';
+	src: url('./assets/fonts/Gilroy-ExtraBold.otf') format(opentype);
+}
 
 *{
 	margin: 0;
@@ -70,4 +74,23 @@ button:hover{
 .flexCol{
 	display: flex;
 	flex-direction: column;
+}
+
+.iframe{
+	height: 75%;
+	width: 90%;
+	border: 3px solid #6590BB;
+	border-radius: 10px;
+	filter: drop-shadow(0 0 30px #6590bb51);
+}
+.iframeControls{
+	display: flex;
+	gap: 15px;
+}
+
+
+iframe{
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
 }
