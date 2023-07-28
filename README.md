@@ -60,7 +60,7 @@ If you have found any bugs in the client or if you have suggestions, please feel
 
 
 ### LICENSE
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fkoolapps%2FLumina.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fteamkoolapps%2FLumina?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fteamkoolapps%2FLumina.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fteamkoolapps%2FLumina?ref=badge_large)
 
 <hr>
 
