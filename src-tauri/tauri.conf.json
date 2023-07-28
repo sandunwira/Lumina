@@ -78,6 +78,7 @@
       {
         "fullscreen": true,
         "title": "Lumina",
+        "label": "main",
         "decorations": false,
         "resizable": false
       }

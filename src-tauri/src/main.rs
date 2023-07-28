@@ -13,12 +13,11 @@ fn main() {
   tauri::Builder::default()
     .setup(|app| {
       let main_window = app.get_window("main").unwrap();
-
       // DISABLE RELOAD ======================================================================== //
-      // main_window.eval("window.addEventListener('keydown', function(e) {if (e.keyCode == 116) { e.preventDefault(); }});").unwrap(); // F5
-      // main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 116) { e.preventDefault(); }});").unwrap(); // CTRL + F5
-      // main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 82) { e.preventDefault(); }});").unwrap(); // CTRL + R
-      // main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 82) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + R
+      main_window.eval("window.addEventListener('keydown', function(e) {if (e.keyCode == 116) { e.preventDefault(); }});").unwrap(); // F5
+      main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 116) { e.preventDefault(); }});").unwrap(); // CTRL + F5
+      main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 82) { e.preventDefault(); }});").unwrap(); // CTRL + R
+      main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 82) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + R
       // DISABLE VIEWING SOURCE ================================================================ //
       main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 85) { e.preventDefault(); }});").unwrap(); // CTRL + U
       // DISABLE PRINT ========================================================================= //
@@ -28,7 +27,7 @@ fn main() {
       main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 83) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + S
       main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 88) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + X
       // DISABLE DEVELOPER OPTIONS ============================================================= //
-      // main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + I
+      main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { e.preventDefault(); }});").unwrap(); // CTRL + SHIFT + I
       // DISABLE FIND IN PAGE ================================================================== //
       main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 70) { e.preventDefault(); }});").unwrap(); // CTRL + F
       main_window.eval("window.addEventListener('keydown', function(e) {if (e.ctrlKey && e.keyCode == 71) { e.preventDefault(); }});").unwrap(); // CTRL + G
