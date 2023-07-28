@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="css/titlebar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/audioPlayer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
+	<script type="module" src="/main.js" defer></script>
+
+	<link rel="preload" href="./assets/fonts/Gilroy-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./assets/fonts/Gilroy-ExtraBold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./assets/images/logo.svg" as="image" type="image/svg+xml">
+	<link rel="preload" href="./assets/videos/background.png" as="image" type="image/png">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" type="text/css">
+</head>
+
+<body>
+
+	<!-- DIALOG START ==================================================-->
+	<dialog id="helpDialog"></dialog>
+	<script src="js/aboutDialog.js"></script>
+	<!--==================================================== DIALOG END -->
+
+	<!-- Titlebar Start ================================================-->
+	<div class="titlebar" id="titlebar"></div>
+	<script src="js/titlebar.js"></script>
+	<!--================================================== Titlebar End -->
+
+	<script src="js/audioPlayer.js"></script>
+
+	<!-- Header Start ==================================================-->
+	<div class="banner flexContainer flexCol" id="headerBackground">
+
+		<video autoplay muted loop id="myVideo">
+			<source
+				src="./assets/videos/background.mp4"
+				type="video/mp4"
+				preload="auto">
+		</video>
+
+		<div class="storiesContainer banner-container flexContainer flexCol">
+			<div class="navigation">
+				<button onclick="history.back()">
+					<i class="fa-solid fa-grip"></i>
+				</button>
+				<h1 class="navigationTitle">Stories</h1>
+			</div>
+			<div class="flexContainer flexRow storyContainer">
+
+				<div id="storyCard" onclick="window.location.href='./stories/an-indian-train-odyssey.html'" style="background: url('./assets/images/stories/an-indian-train-odyssey.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - An Indian Train Odyssey</p>
+				</div>
+
+				<div id="storyCard" onclick="window.location.href='./stories/the-antique-store.html'" style="background: url('./assets/images/stories/the-antique-store.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Antique Store</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-panda-forest.html'" style="background: url('./assets/images/stories/the-panda-forest.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Panda Forest</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/mona-lisas-tuscany.html'" style="background: url('./assets/images/stories/mona-lisas-tuscany.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - Mona Lisa's Tuscany</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-magical-train-ride.html'" style="background: url('./assets/images/stories/a-magical-train-ride.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Magical Train Ride</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-summer-night-in-rome.html'" style="background: url('./assets/images/stories/a-summer-night-in-rome.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Summer Night In Rome</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-tale-of-eldrid-and-his-dragons.html'" style="background: url('./assets/images/stories/the-tale-of-eldrid-and-his-dragons.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Tale of Eldrid And His Dragons</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-magical-english-garden.html'" style="background: url('./assets/images/stories/the-magical-english-garden.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Magical English Garden</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-journey-through-dreamy-lands.html'" style="background: url('./assets/images/stories/a-journey-through-dreamy-lands.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Journey Through Dreamy Lands</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-mysterious-night-in-egypt.html'" style="background: url('./assets/images/stories/a-mysterious-night-in-egypt.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton -  Mysterious Night In Egypt</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/in-the-heart-of-monument-valley.html'" style="background: url('./assets/images/stories/in-the-heart-of-monument-valley.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - In The Heart of Monument Valley</p>
+				</div>
+
+				<div id="storyCard" onclick="window.location.href='./stories/the-magic-lake-of-healing.html'" style="background: url('./assets/images/stories/the-magic-lake-of-healing.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Magic Lake of Healing</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-magic-carpet.html'" style="background: url('./assets/images/stories/the-magic-carpet.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Magic Carpet</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/finding-harmony-in-the-himalayas.html'" style="background: url('./assets/images/stories/finding-harmony-in-the-himalayas.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - Finding Harmony In The Himalayas</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-bookshop-of-sleep.html'" style="background: url('./assets/images/stories/the-bookshop-of-sleep.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Bookshop of Sleep</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-talking-tree.html'" style="background: url('./assets/images/stories/the-talking-tree.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Talking Tree</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/meeting-shakespeare.html'" style="background: url('./assets/images/stories/meeting-shakespeare.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - Meeting Shakespeare</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-night-on-the-beach-with-a-friend.html'" style="background: url('./assets/images/stories/a-night-on-the-beach-with-a-friend.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Night On The Beach With A Friend</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-mysterious-wardrobe-of-time-travel.html'" style="background: url('./assets/images/stories/the-mysterious-wardrobe-of-time-travel.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Mysterious Wardrobe Of Time Travel</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-rainy-night-in-the-tent.html'" style="background: url('./assets/images/stories/a-rainy-night-in-the-tent.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Rainy Night In The Tent</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-sleepy-night-in-new-york.html'" style="background: url('./assets/images/stories/a-sleepy-night-in-new-york.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Sleepy Night In New York</p>
+				</div>
+
+				<div id="storyCard" onclick="window.location.href='./stories/monets-wondrous-garden.html'" style="background: url('./assets/images/stories/monets-wondrous-garden.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - Monet's Wondrous Garden</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/an-adventure-through-space.html'" style="background: url('./assets/images/stories/an-adventure-through-space.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - An Adventure Through Space</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-magical-night-circus.html'" style="background: url('./assets/images/stories/the-magical-night-circus.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Magical Night Circus</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-rainy-night-drive.html'" style="background: url('./assets/images/stories/a-rainy-night-drive.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Rainy Night Drive</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-hot-air-balloon-adventure-in-cappadocia.html'" style="background: url('./assets/images/stories/a-hot-air-balloon-adventure-in-cappadocia.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Hot Air Balloon Adventure In Cappadocia</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/meeting-michelangelo.html'" style="background: url('./assets/images/stories/meeting-michelangelo.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - Meeting Michelangelo</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-starry-night.html'" style="background: url('./assets/images/stories/the-starry-night.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Starry Night</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-magical-underwater-voyage.html'" style="background: url('./assets/images/stories/a-magical-underwater-voyage.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Magical Underwater Voyage</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-castle-in-the-clouds.html'" style="background: url('./assets/images/stories/the-castle-in-the-clouds.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Castle In The Clouds</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-night-in-the-african-serengeti.html'" style="background: url('./assets/images/stories/a-night-in-the-african-serengeti.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Night In The African Serengeti</p>
+				</div>
+
+				<div id="storyCard" onclick="window.location.href='./stories/a-rainy-night-in-the-museum.html'" style="background: url('./assets/images/stories/a-rainy-night-in-the-museum.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Rainy Night In The Museum</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-mysterious-market-of-magic.html'" style="background: url('./assets/images/stories/the-mysterious-market-of-magic.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Mysterious Market Of Magic</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-magic-lake-of-healing.html'" style="background: url('./assets/images/stories/the-cabin-by-the-lake.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Cabin By The Lake</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-cabin-in-the-woods.html'" style="background: url('./assets/images/stories/the-cabin-in-the-woods.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Cabin In The Woods</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-plane-ride-of-your-dreams.html'" style="background: url('./assets/images/stories/the-plane-ride-of-your-dreams.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Plane Ride Of Your Dreams</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-enchanted-castle-and-the-mystic-library.html'" style="background: url('./assets/images/stories/the-enchanted-castle-and-the-mystic-library.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Enchanted Castle And The Mystic Library</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-snowy-night-in-paris.html'" style="background: url('./assets/images/stories/a-snowy-night-in-paris.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Snowy Night In Paris</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-beekeeper-the-artisan-and-the-shepherd.html'" style="background: url('./assets/images/stories/the-beekeeper-the-artisan-and-the-shepherd.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Beekeeper, The Artisan And The Shepherd</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/a-night-on-the-orient-express.html'" style="background: url('./assets/images/stories/a-night-on-the-orient-express.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - A Night On The Orient Express</p>
+				</div>
+				<div id="storyCard" onclick="window.location.href='./stories/the-lighthouse-by-the-sea.html'" style="background: url('./assets/images/stories/the-lighthouse-by-the-sea.jpg'); background-size: cover;">
+					<p class="flexContainer">Stephen Dalton - The Lighthouse By The Sea</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	<!--==================================================== Header End -->
+
+</body>
+
+</html>

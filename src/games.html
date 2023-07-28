@@ -8,70 +8,90 @@
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="css/titlebar.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/audioPlayer.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
 	<script type="module" src="/main.js" defer></script>
 
 	<link rel="preload" href="./assets/fonts/Gilroy-Light.otf" as="font" type="font/otf" crossorigin>
-	<link rel="preload" href="./assets/images/logo.svg" as="image" type="svg" crossorigin>
-	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="stylesheet" type="css" crossorigin>
+	<link rel="preload" href="./assets/fonts/Gilroy-ExtraBold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="./assets/images/logo.svg" as="image" type="image/svg+xml">
+	<link rel="preload" href="./assets/videos/background.png" as="image" type="image/png">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" type="text/css">
 </head>
 
 <body>
+
+	<!-- DIALOG START ==================================================-->
+	<dialog id="helpDialog"></dialog>
+	<script src="js/aboutDialog.js"></script>
+	<!--==================================================== DIALOG END -->
 
 	<!-- Titlebar Start ================================================-->
 	<div class="titlebar" id="titlebar"></div>
 	<script src="js/titlebar.js"></script>
 	<!--================================================== Titlebar End -->
 
+	<script src="js/audioPlayer.js"></script>
+
 	<!-- Header Start ==================================================-->
-	<div class="banner flexContainer flexCol" style="background: linear-gradient(45deg, #304c68, #19232e);">
-		<div class="banner-container flexContainer flexCol">
+	<div class="banner flexContainer flexCol" id="headerBackground">
+
+		<video autoplay muted loop id="myVideo">
+			<source
+				src="./assets/videos/background.mp4"
+				type="video/mp4"
+				preload="auto">
+		</video>
+
+		<div class="gamesContainer banner-container flexContainer flexCol">
 			<div class="navigation">
-				<button onclick="window.location.href='./index.html'">
+				<button onclick="history.back()">
 					<i class="fa-solid fa-grip"></i>
 				</button>
-				<h1 class="navigationTitle">GAMES</h1>
+				<h1 class="navigationTitle">Games</h1>
 			</div>
 			<div class="flexContainer flexRow gameContainer">
-				<div id="gamecard" onclick="window.location.href='./games/BullsEye.html'" style="background: url('./assets/images/games/BullsEye.png'); background-size: cover;">
-					<p>BullsEye</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/BullsEye.html'" style="background: url('./assets/images/games/BullsEye.png'); background-size: cover;">
+					<p class="flexContainer">BullsEye</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/CatJumper.html'" style="background: url('./assets/images/games/CatJumper.png'); background-size: cover;">
-					<p>Cat Jumper</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/CatJumper.html'" style="background: url('./assets/images/games/CatJumper.png'); background-size: cover;">
+					<p class="flexContainer">Cat Jumper</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/ClickOnTheCircle.html'" style="background: url('./assets/images/games/ClickOnTheCircle.png'); background-size: cover;">
-					<p>Click On The Circle</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/ClickOnTheCircle.html'" style="background: url('./assets/images/games/ClickOnTheCircle.png'); background-size: cover;">
+					<p class="flexContainer">Click On The Circle</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/CubNPup.html'" style="background: url('./assets/images/games/CubNPup.png'); background-size: cover;">
-					<p>Cub N Pup</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/CubNPup.html'" style="background: url('./assets/images/games/CubNPup.png'); background-size: cover;">
+					<p class="flexContainer">Cub N Pup</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/Minesweeper.html'" style="background: url('./assets/images/games/Minesweeper.png'); background-size: cover;">
-					<p>Minesweeper</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/Minesweeper.html'" style="background: url('./assets/images/games/Minesweeper.png'); background-size: cover;">
+					<p class="flexContainer">Minesweeper</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/RememberCard.html'" style="background: url('./assets/images/games/RememberCard.png'); background-size: cover;">
-					<p>Remember Card</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/RememberCard.html'" style="background: url('./assets/images/games/RememberCard.png'); background-size: cover;">
+					<p class="flexContainer">Remember Card</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/RockPaperScissors.html'" style="background: url('./assets/images/games/RockPaperScissors.png'); background-size: cover;">
-					<p>Rock Paper Scissors</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/RockPaperScissors.html'" style="background: url('./assets/images/games/RockPaperScissors.png'); background-size: cover;">
+					<p class="flexContainer">Rock Paper Scissors</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/SnakesAndLadders.html'" style="background: url('./assets/images/games/SnakesAndLadders.png'); background-size: cover;">
-					<p>Snakes and Ladders</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/SnakesAndLadders.html'" style="background: url('./assets/images/games/SnakesAndLadders.png'); background-size: cover;">
+					<p class="flexContainer">Snakes and Ladders</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/TheCube.html'" style="background: url('./assets/images/games/TheCube.png'); background-size: cover;">
-					<p>The Cube</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/TheCube.html'" style="background: url('./assets/images/games/TheCube.png'); background-size: cover;">
+					<p class="flexContainer">The Cube</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/TicTacToe.html'" style="background: url('./assets/images/games/TicTacToe.png'); background-size: cover;">
-					<p>Tic Tac Toe</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/TicTacToe.html'" style="background: url('./assets/images/games/TicTacToe.png'); background-size: cover;">
+					<p class="flexContainer">Tic Tac Toe</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/TiltingMaze.html'" style="background: url('./assets/images/games/TiltingMaze.png'); background-size: cover;">
-					<p>Tilting Maze</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/TiltingMaze.html'" style="background: url('./assets/images/games/TiltingMaze.png'); background-size: cover;">
+					<p class="flexContainer">Tilting Maze</p>
 				</div>
-				<div id="gamecard" onclick="window.location.href='./games/TowerBlocks.html'" style="background: url('./assets/images/games/TowerBlocks.png'); background-size: cover;">
-					<p>Tower Blocks</p>
+				<div id="gamecard" class="flexContainer" onclick="window.location.href='./games/TowerBlocks.html'" style="background: url('./assets/images/games/TowerBlocks.png'); background-size: cover;">
+					<p class="flexContainer">Tower Blocks</p>
 				</div>
 			</div>
 		</div>
+
 	</div>
 	<!--==================================================== Header End -->
 

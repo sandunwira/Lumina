@@ -4,6 +4,8 @@
 	top: 0;
 	width: 100%;
 	color: #fff;
+	background: #14141430;
+	box-shadow: 0px 0px 20px 10px #161616b0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -54,5 +56,45 @@
 }
 #titlebar-minimize:hover{
 	background: #cacaca88;
+	transition: 0.2s;
+}
+#titlebar-lock{
+	transition: 0.2s;
+}
+.controls a{
+	text-decoration: none;
+}
+#titlebar-lock i{
+	font-size: 13px;
+}
+#titlebar-lock:hover{
+	background: #ffbc8988;
+	transition: 0.2s;
+}
+#titlebar-help{
+	color: #56AFE7;
+	opacity: 1;
+	transition: 0.2s;
+}
+#titlebar-help i{
+	font-size: 13px;
+}
+#titlebar-help:hover{
+	color: #ECECEC;
+	background: #89d8ff88;
+	cursor: help;
+	transition: 0.2s;
+}
+#titlebar-reload{
+	color: #56AFE7;
+	opacity: 1;
+	transition: 0.2s;
+}
+#titlebar-reload i{
+	font-size: 13px;
+}
+#titlebar-reload:hover{
+	color: #ECECEC;
+	background: #89d8ff88;
 	transition: 0.2s;
 }

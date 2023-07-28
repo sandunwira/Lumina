@@ -51,13 +51,14 @@ button{
 	font-size: medium;
 	padding: 10px 20px;
 	color: #ECECEC;
-	background: #6590BB;
-	border: 2px solid #6590BB;
+	background: #56afe7;
+	border: 2px solid #56afe7;
 	border-radius: 8px;
 	transition: 0.5s
 }
 button:hover{
 	cursor: pointer;
+	background: #3f81aa;
 	border: 2px solid #ECECEC;
 	transition: 0.5s;
 }
@@ -79,6 +80,7 @@ button:hover{
 .iframe{
 	height: 75%;
 	width: 90%;
+	background: #242424;
 	border: 3px solid #6590BB;
 	border-radius: 10px;
 	filter: drop-shadow(0 0 30px #6590bb51);
@@ -93,4 +95,12 @@ iframe{
 	height: 100%;
 	width: 100%;
 	border-radius: 10px;
+}
+
+abbr{
+	font-weight: bold;
+	text-underline-offset: 3px;
+}
+abbr:hover{
+	cursor: help;
 }

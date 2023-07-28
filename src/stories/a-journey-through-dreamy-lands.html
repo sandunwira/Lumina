@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../app.css">
+	<link rel="stylesheet" href="../css/titlebar.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/dialog.css">
+	<link rel="stylesheet" href="../css/audioPlayer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+
+	<script type="module" src="/main.js" defer></script>
+
+	<link rel="preload" href="../assets/fonts/Gilroy-Light.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="../assets/fonts/Gilroy-ExtraBold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="../assets/images/logo.svg" as="image" type="image/svg+xml">
+	<link rel="preload" href="../assets/videos/background.png" as="image" type="image/png">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" type="text/css">
+</head>
+
+<body>
+
+	<!-- DIALOG START ==================================================-->
+	<dialog id="helpDialog"></dialog>
+	<script src="../js/aboutDialog.js"></script>
+	<!--==================================================== DIALOG END -->
+
+	<!-- Titlebar Start ================================================-->
+	<div class="titlebar" id="titlebar"></div>
+	<script src="../js/titlebar.js"></script>
+	<!--================================================== Titlebar End -->
+
+	<script src="../js/audioPlayer.js"></script>
+
+	<!-- Header Start ==================================================-->
+	<div class="banner flexContainer flexCol" id="headerBackground">
+		<div class="storyDetails">
+			<h1 class="storyTitle">A Journey Through Dreamy Lands</h1>
+			
+			<div class="iframeControls">
+				<button onclick="history.back()">
+					<i class="fa-solid fa-xmark"></i>
+					<span>Close</span>
+				</button>
+				<button onclick="window.location.reload();">
+					<i class="fa-solid fa-arrows-rotate"></i>
+					<span>Refresh</span>
+				</button>
+			</div>
+		</div>
+		
+		<div class="iframe">
+			<iframe src="https://www.youtube.com/embed/vlLDhy91YYE?start=57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+		</div>
+
+	</div>
+	<!--==================================================== Header End -->
+
+</body>
+
+</html>

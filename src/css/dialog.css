@@ -1,0 +1,107 @@
+dialog::backdrop {
+	background: #00000050;
+	backdrop-filter: blur(15px);
+}
+
+dialog {
+	color: #ECECEC;
+	background: #242424;
+	border: none;
+	height: 400px;
+	width: 50vw;
+	user-select: none;
+	border-radius: 15px;
+	position: fixed;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+
+.dialog{
+	height: 100%;
+	width: 100%;
+}
+.dialogContainer{
+	justify-content: space-around;
+	width: 92%;
+	height: 100%;
+}
+.dialogContainer p{
+	color: #9e9e9e;
+	font-size: 10px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.dialogTitle{
+	width: 100%;
+}
+.dialogTitle h1{
+	width: 100%;
+	font-size: 22px;
+	font-family: 'GilroyExtraBold', sans-serif;
+}
+.dialogTitle span{
+	font-family: 'Gilroy', sans-serif;
+}
+.dialogTitle button{
+	padding: 2px 5px;
+	/* color: #0e0e0e;
+	background: #ECECEC; */
+	border: none;
+	border-radius: 4px;
+	outline: none;
+	transition: 0.2s;
+}
+.dialogTitle button:hover{
+	color: #ECECEC;
+	background: #ff1616;
+	transition: 0.2s;
+}
+
+.dialogImg{
+	width: 100%;
+}
+.dialogImg img{
+	height: 50px;
+	filter: drop-shadow(0 0 8px #78abd867);
+}
+
+.dialogDesc{
+	gap: 20px;
+}
+.dialogDesc p{
+	line-height: 1.3;
+	color: #ECECEC;
+	font-size: 18px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.dialogLinks {
+	width: 100%;
+	gap: 6px;
+}
+.dialogLinks a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	color: #ECECEC;
+	background: #6590BB;
+	transition: 0.4s;
+}
+.dialogLinks a:hover{
+	color: #6590BB;
+	background: #ECECEC;
+	transition: 0.4s;
+}
+
+.dialogFooter p{
+	color: #9e9e9e;
+	font-size: 10px;
+	text-align: justify;
+	text-align-last: center;
+}
