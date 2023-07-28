@@ -5,7 +5,7 @@
 [![GitHub top language](https://img.shields.io/github/languages/top/teamkoolapps/Lumina?style=for-the-badge)](https://github.com/teamkoolapps/Lumina)
 [![GitHub Repo stars](https://img.shields.io/github/stars/teamkoolapps/Lumina?style=for-the-badge)](https://github.com/teamkoolapps/Lumina/stargazers)
 [![GitHub all releases](https://img.shields.io/github/downloads/teamkoolapps/Lumina/total?style=for-the-badge)](https://github.com/teamkoolapps/Lumina/releases)
-[![SourceForge](https://img.shields.io/sourceforge/dt/lumina-app.svg?style=for-the-badge)](https://sourceforge.net/projects/twitchbox/files)
+[![SourceForge](https://img.shields.io/sourceforge/dt/lumina-app.svg?style=for-the-badge)](https://sourceforge.net/projects/lumina-app/files)
 [![GitHub](https://img.shields.io/github/license/teamkoolapps/Lumina?style=for-the-badge)](https://github.com/teamkoolapps/Lumina/blob/main/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues-raw/teamkoolapps/Lumina?style=for-the-badge)](https://github.com/teamkoolapps/Lumina/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/teamkoolapps/Lumina?style=for-the-badge)](https://github.com/teamkoolapps/Lumina/commit/main)
