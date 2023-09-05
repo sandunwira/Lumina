@@ -42,7 +42,7 @@ function generateDialogHTML() {
 	html += '</div>';
 
 	html += '<span class="dialogFooter">';
-	html += '<p>Version: 1.0.0</p>';
+	html += '<p>Version: 1.1.0</p>';
 	html += '</span>';
 
 	html += '</div>';
