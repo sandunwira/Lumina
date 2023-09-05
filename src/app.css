@@ -7,45 +7,45 @@
 	src: url('./assets/fonts/Gilroy-ExtraBold.otf') format(opentype);
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	font-family: 'Gilroy', sans-serif;
 }
 
 /* SCROLLBAR PROPERTIES START ========================================= */
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
 	width: 7px;
 	height: 7px;
 }
-*::-webkit-scrollbar-track{
+*::-webkit-scrollbar-track {
 	background: transparent;
 }
-*::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb {
 	background-color: #ABABAB;
 	border-radius: 5px;
 }
-*::-webkit-scrollbar-thumb:hover{
+*::-webkit-scrollbar-thumb:hover {
 	background-color: #8F8F8F;
 }
-*::-webkit-scrollbar-thumb:active{
+*::-webkit-scrollbar-thumb:active {
 	background-color: #7A7A7A;
 }
 /* =========================================== SCROLLBAR PROPERTIES END */
 
-html{
+html {
 	user-select: none;
 	color: #ECECEC;
 	background: #242424;
 }
 
-a{
+a {
 	color: #ECECEC;
 	text-decoration-color: #ECECEC;
 	text-underline-offset: 2px;
 }
 
-button{
+button {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: medium;
@@ -56,28 +56,28 @@ button{
 	border-radius: 8px;
 	transition: 0.5s
 }
-button:hover{
+button:hover {
 	cursor: pointer;
 	background: #3f81aa;
 	border: 2px solid #ECECEC;
 	transition: 0.5s;
 }
 
-.flexContainer{
+.flexContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.flexRow{
+.flexRow {
 	display: flex;
 	flex-direction: row;
 }
-.flexCol{
+.flexCol {
 	display: flex;
 	flex-direction: column;
 }
 
-.iframe{
+.iframe {
 	height: 75%;
 	width: 90%;
 	background: #242424;
@@ -85,22 +85,22 @@ button:hover{
 	border-radius: 10px;
 	filter: drop-shadow(0 0 30px #6590bb51);
 }
-.iframeControls{
+.iframeControls {
 	display: flex;
 	gap: 15px;
 }
 
 
-iframe{
+iframe {
 	height: 100%;
 	width: 100%;
 	border-radius: 10px;
 }
 
-abbr{
+abbr {
 	font-weight: bold;
 	text-underline-offset: 3px;
 }
-abbr:hover{
+abbr:hover {
 	cursor: help;
 }

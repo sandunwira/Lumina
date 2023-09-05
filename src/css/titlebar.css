@@ -1,4 +1,4 @@
-.titlebar{
+.titlebar {
 	z-index: 1000;
 	position: fixed;
 	top: 0;
@@ -11,26 +11,26 @@
 	justify-content: center;
 	backdrop-filter: blur(25px);
 }
-.titlebar-container{
+.titlebar-container {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.titlebar .title{
+.titlebar .title {
 	display: flex;
 	align-items: center;
 	padding-left: 10px;
 }
-.titlebar img{
+.titlebar img {
 	height: 15px;
 	margin-right: 5px;
 }
-.titlebar .controls{
+.titlebar .controls {
 	display: flex;
 	align-items: center;
 }
-.controls .icon{
+.controls .icon {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -40,60 +40,60 @@
 	opacity: 0.7;
 	transition: 0.2s;
 }
-.controls .icon:hover{
+.controls .icon:hover {
 	opacity: 1;
 	transition: 0.2s;
 }
-#titlebar-close{
+#titlebar-close {
 	transition: 0.2s;
 }
-#titlebar-close:hover{
+#titlebar-close:hover {
 	background: #e7260888;
 	transition: 0.2s;
 }
-#titlebar-minimize{
+#titlebar-minimize {
 	transition: 0.2s;
 }
-#titlebar-minimize:hover{
+#titlebar-minimize:hover {
 	background: #cacaca88;
 	transition: 0.2s;
 }
-#titlebar-lock{
+#titlebar-lock {
 	transition: 0.2s;
 }
-.controls a{
+.controls a {
 	text-decoration: none;
 }
-#titlebar-lock i{
+#titlebar-lock i {
 	font-size: 13px;
 }
-#titlebar-lock:hover{
+#titlebar-lock:hover {
 	background: #ffbc8988;
 	transition: 0.2s;
 }
-#titlebar-help{
+#titlebar-help {
 	color: #56AFE7;
 	opacity: 1;
 	transition: 0.2s;
 }
-#titlebar-help i{
+#titlebar-help i {
 	font-size: 13px;
 }
-#titlebar-help:hover{
+#titlebar-help:hover {
 	color: #ECECEC;
 	background: #89d8ff88;
 	cursor: help;
 	transition: 0.2s;
 }
-#titlebar-reload{
+#titlebar-reload {
 	color: #56AFE7;
 	opacity: 1;
 	transition: 0.2s;
 }
-#titlebar-reload i{
+#titlebar-reload i {
 	font-size: 13px;
 }
-#titlebar-reload:hover{
+#titlebar-reload:hover {
 	color: #ECECEC;
 	background: #89d8ff88;
 	transition: 0.2s;

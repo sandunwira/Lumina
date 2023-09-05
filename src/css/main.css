@@ -1,70 +1,70 @@
-.landingHeader{
+.landingHeader {
 	height: 100vh;
 	background: linear-gradient(45deg, #304c68, #19232e);
 }
 
-.landingHeader-container{
+.landingHeader-container {
 	width: 80%;
 	height: 70%;
 	gap: 40px;
 }
-.landingHeader-img{
+.landingHeader-img {
 	height: auto;
 	width: fit-content;
 }
-.landingHeader-img img{
+.landingHeader-img img {
 	height: 120px;
 }
-.landingHeader-txt{
+.landingHeader-txt {
 	text-align: center;
 	gap: 8px;
 }
-.landingHeader-txt button{
+.landingHeader-txt button {
 	margin-top: 20px;
 }
 
-.header{
+.header {
 	height: 100vh;
 	background: linear-gradient(45deg, #0b7fc7, #1d1d1d);
 }
-.header h1{
+.header h1 {
 	margin-bottom: 10px;
 }
-.header h2{
+.header h2 {
 	margin-bottom: 35px;
 }
-.header h3{
+.header h3 {
 	margin-bottom: 10px;
 }
 
-.header-txt{
+.header-txt {
 	width: 80%;
 	height: 60%;
 }
-.header-txt span{
+.header-txt span {
 	color: #63BAF1;
 }
 
-#meaning{
+#meaning {
 	color: inherit;
 	text-shadow: 0 0 10px #ECECEC;
 }
 
-.banner{
+.banner {
 	height: 100vh;
 }
-.homeScreen{
+.homeScreen {
 	position: absolute;
 	align-items: flex-start;
 	justify-content: space-between;
 }
-.banner-container{
+.banner-container {
 	margin-top: 25px;
 	height: 85%;
 	width: 95%;
 	/* border: 2px dashed #FFFFFF; */
 }
-.info-bar{
+.info-bar {
 	width: 100%;
 	/* background: #989898; */
 	display: flex;
@@ -72,64 +72,64 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.profile-container{
+.profile-container {
 	gap: 15px;
 }
-#timeIcon{
+#timeIcon {
 	padding: 0 10px;
 }
-#timeIcon i{
+#timeIcon i {
 	font-size: 60px;
 	color: #34a1e4;
 }
 
-#greetingContainer{
+#greetingContainer {
 	align-items: flex-start;
 }
 
-#greeting h1{
+#greeting h1 {
 	font-family: 'GilroyExtraBold', sans-serif;
 	font-size: 35px;
 }
 
-#greetingLocation{
+#greetingLocation {
 	font-size: 18px;
 	letter-spacing: 1px;
 	-webkit-text-stroke: 1px #56afe7;
 	color: #56afe7;
 }
 
-.homeScreenTime h1{
+.homeScreenTime h1 {
 	font-family: 'GilroyExtraBold', sans-serif;
 	font-size: 45px;
 	padding: 0 10px;
 }
 
-.homeSectionsContainer{
+.homeSectionsContainer {
 	justify-content: space-between;
 	width: 100%;
 }
-#sectionCard{
+#sectionCard {
 	align-items: flex-end;
-	width: 340px;
+	width: 23%;
 	height: 200px;
 	border-radius: 10px;
 	transition: 0.25s;
 }
-#sectionCard:hover{
+#sectionCard:hover {
 	outline: 4px solid #ECECEC;
 	outline-offset: 3px;
 	cursor: pointer;
 	transition: 0.25s;
 }
 
-#sectionCard:hover p{
+#sectionCard:hover p {
 	color: #ECECEC;
 	backdrop-filter: grayscale(0%);
 	transition: 0.2s;
 }
 
-#sectionCard p{
+#sectionCard p {
 	color: #56afe7;
 	height: 125%;
 	width: 100%;
@@ -142,34 +142,34 @@
 
 
 
-.clockContainer{
+.clockContainer {
 	align-items: flex-start;
 }
-.lockScreenTime h1{
+.lockScreenTime h1 {
 	font-size: 85px;
 	color: #56afe7;
 	font-family: 'GilroyExtraBold', sans-serif;
 }
-.lockScreenDate h1{
+.lockScreenDate h1 {
 	font-size: 40px;
 }
 
-#lockScreen{
+#lockScreen {
 	background: url('../assets/videos/background.png');
 	background-size: cover;
 }
 
-#homeBackground{
+#homeBackground {
 	background: url('../assets/videos/background.png');
 	background-size: cover;
 }
 
-#headerBackground{
+#headerBackground {
 	background: url('../assets/videos/background.png');
 	background-size: cover;
 }
 
-.lockScreenContainer{
+.lockScreenContainer {
 	position: absolute;
 	justify-content: flex-end;
 	height: 85%;
@@ -177,110 +177,110 @@
 	/* border: 2px dashed #FFFFFF; */
 }
 
-.lockInfoContainer{
+.lockInfoContainer {
 	width: 95%;
 	justify-content: space-between;
 }
 
-.lockButtons{
+.lockButtons {
 	height: 100%;
 	align-items: flex-end;
 	gap: 30px;
 }
-.lockButtons button{
+.lockButtons button {
 	width: 70px;
 	height: 70px;
 	border-radius: 25px;
 	scale: 1.0;
 	transition: 0.3s;
 }
-.lockButtons button:hover{
+.lockButtons button:hover {
 	scale: 1.05;
 	transition: 0.3s;
 }
-.lockButtons i{
+.lockButtons i {
 	font-size: 20px;
 }
 
-.lockButtons #playPauseBtn{
+.lockButtons #playPauseBtn {
 	background: #56AFE766;
 	border: 2px solid #FFFFFF;
 	transition: 0.3s;
 }
-.lockButtons #playPauseBtn:hover{
+.lockButtons #playPauseBtn:hover {
 	filter: drop-shadow(0 0 15px #56AFE7A5);
 	transition: 0.3s;
 }
 
-#quitBtn{
+#quitBtn {
 	background: #FFBBBB66;
 	border: 2px solid #FFFFFF;
 }
-#quitBtn:hover{
+#quitBtn:hover {
 	filter: drop-shadow(0 0 15px #FFBBBBA5);
 	transition: 0.3s;
 }
 
-#loginBtn{
+#loginBtn {
 	background: #56AFE766;
 	border: 2px solid #FFFFFF;
 }
-#loginBtn:hover{
+#loginBtn:hover {
 	filter: drop-shadow(0 0 15px #56AFE7A5);
 	transition: 0.3s;
 }
 
 
-.quotesContainer{
+.quotesContainer {
 	position: absolute;
 	justify-content: flex-start;
 }
 
-.quoteBox{
+.quoteBox {
 	width: 100%;
 	height: 100%;
 }
-.quoteBox .iframe{
+.quoteBox .iframe {
 	width: 100%;
 	height: 100%;
 }
 
 
-.breatheContainer{
+.breatheContainer {
 	position: absolute;
 	justify-content: flex-start;
 }
 
-.breatheBox{
+.breatheBox {
 	width: 100%;
 	height: 100%;
 }
-.breatheBox .iframe{
+.breatheBox .iframe {
 	width: 100%;
 	height: 100%;
 }
-.breatheBox video{
+.breatheBox video {
 	border-radius: 10px;
 	height: 100%;
 }
 
 
 
-.storiesContainer{
+.storiesContainer {
 	position: absolute;
 	justify-content: flex-start;
 }
 
-.storyContainer{
+.storyContainer {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 30px;
 	width: 100%;
 }
 
-#storyCard{
-	width: 340px;
-	height: 190px;
+#storyCard {
+	width: 23%;
+	height: 19%;
 	border-radius: 10px;
 	filter: brightness(75%) grayscale(40%);
 }
@@ -289,7 +289,7 @@
 	margin-bottom: 40px;
 }
 
-#storyCard:hover{
+#storyCard:hover {
 	outline: 4px solid #ECECEC;
 	outline-offset: 3px;
 	filter: none;
@@ -297,7 +297,7 @@
 	transition: 0.25s;
 }
 
-#storyCard:hover p{
+#storyCard:hover p {
 	color: #ffffff;
 	background: linear-gradient(45deg, #0c243390, #1c71a590);
 	backdrop-filter: blur(8px);
@@ -305,7 +305,7 @@
 	visibility: visible;
 }
 
-#storyCard p{
+#storyCard p {
 	height: 100%;
 	font-size: larger;
 	font-weight: bold;
@@ -314,7 +314,7 @@
 	visibility: hidden;
 }
 
-.storyDetails{
+.storyDetails {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -322,24 +322,24 @@
 	margin-bottom: 20px;
 }
 
-.storyTitle{
+.storyTitle {
 	font-family: 'GilroyExtraBold', sans-serif;
 }
 
 
 
-.gamesContainer{
+.gamesContainer {
 	position: absolute;
 	justify-content: flex-start;
 }
 
-#gamecard{
+#gamecard {
 	width: 180px;
 	height: 180px;
 	border-radius: 10px;
 	filter: grayscale(100%);
 }
-#gamecard:hover{
+#gamecard:hover {
 	outline: 4px solid #ECECEC;
 	outline-offset: 3px;
 	cursor: pointer;
@@ -347,7 +347,7 @@
 	transition: 0.25s;
 }
 
-#gamecard:hover p{
+#gamecard:hover p {
 	color: #ffffff;
 	background: linear-gradient(45deg, #0c243390, #1c71a590);
 	backdrop-filter: blur(8px);
@@ -355,7 +355,7 @@
 	visibility: visible;
 }
 
-#gamecard p{
+#gamecard p {
 	height: 100%;
 	width: 100%;
 	font-size: larger;
@@ -365,48 +365,48 @@
 	visibility: hidden;
 }
 
-.gameContainer{
+.gameContainer {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 30px;
 	width: 100%;
 }
 
-.gameDetails{
+.gameDetails {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
 	margin-bottom: 20px;
 }
-.gameTitle{
+.gameTitle {
 	font-family: 'GilroyExtraBold', sans-serif;
 }
 
 
-.navigationTitle{
+.navigationTitle {
 	text-align: center;
 	font-family: 'GilroyExtraBold', sans-serif;
 	font-size: 40px;
 	margin-left: 20px;
 }
 
-.navigation{
+.navigation {
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 40px;
 }
-.navigation button{
+.navigation button {
 	padding: 8px 12px;
 	border: none;
 }
-.navigation button:hover{
+.navigation button:hover {
 	background: #3f81aa;
 }
 
-#myVideo{
+#myVideo {
 	position: fixed;
 	right: 0;
 	bottom: 0;

@@ -16,11 +16,11 @@ dialog {
 	transform: translate(50%, -50%);
 }
 
-.dialog{
+.dialog {
 	height: 100%;
 	width: 100%;
 }
-.dialogContainer{
+.dialogContainer {
 	justify-content: space-around;
 	width: 92%;
 	height: 100%;
@@ -32,18 +32,18 @@ dialog {
 	text-align-last: center;
 }
 
-.dialogTitle{
+.dialogTitle {
 	width: 100%;
 }
-.dialogTitle h1{
+.dialogTitle h1 {
 	width: 100%;
 	font-size: 22px;
 	font-family: 'GilroyExtraBold', sans-serif;
 }
-.dialogTitle span{
+.dialogTitle span {
 	font-family: 'Gilroy', sans-serif;
 }
-.dialogTitle button{
+.dialogTitle button {
 	padding: 2px 5px;
 	/* color: #0e0e0e;
 	background: #ECECEC; */
@@ -52,24 +52,24 @@ dialog {
 	outline: none;
 	transition: 0.2s;
 }
-.dialogTitle button:hover{
+.dialogTitle button:hover {
 	color: #ECECEC;
 	background: #ff1616;
 	transition: 0.2s;
 }
 
-.dialogImg{
+.dialogImg {
 	width: 100%;
 }
-.dialogImg img{
+.dialogImg img {
 	height: 50px;
 	filter: drop-shadow(0 0 8px #78abd867);
 }
 
-.dialogDesc{
+.dialogDesc {
 	gap: 20px;
 }
-.dialogDesc p{
+.dialogDesc p {
 	line-height: 1.3;
 	color: #ECECEC;
 	font-size: 18px;
@@ -81,7 +81,7 @@ dialog {
 	width: 100%;
 	gap: 6px;
 }
-.dialogLinks a{
+.dialogLinks a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -93,13 +93,13 @@ dialog {
 	background: #6590BB;
 	transition: 0.4s;
 }
-.dialogLinks a:hover{
+.dialogLinks a:hover {
 	color: #6590BB;
 	background: #ECECEC;
 	transition: 0.4s;
 }
 
-.dialogFooter p{
+.dialogFooter p {
 	color: #9e9e9e;
 	font-size: 10px;
 	text-align: justify;
