@@ -44,8 +44,8 @@
         "icons/icon.ico"
       ],
       "identifier": "Lumina",
-      "longDescription": "",
-      "shortDescription": "",
+      "longDescription": "An opensource app to achieve relaxation and mindfulness",
+      "shortDescription": "An opensource app to achieve relaxation and mindfulness",
       "externalBin": [],
       "resources": [],
       "targets": "all",
