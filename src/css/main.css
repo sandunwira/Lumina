@@ -28,7 +28,7 @@
 }
 #timeIcon i {
 	font-size: 60px;
-	color: #34a1e4;
+	color: #34A1E4;
 }
 
 #greetingContainer {
@@ -43,8 +43,12 @@
 #greetingLocation {
 	font-size: 18px;
 	letter-spacing: 1px;
-	-webkit-text-stroke: 1px #56afe7;
-	color: #56afe7;
+	-webkit-text-stroke: 1px #56AFE7;
+	color: #56AFE7;
+}
+#greetingLocation i{
+	font-size: 12px;
+	-webkit-text-stroke: 0;
 }
 
 .homeScreenTime h1 {
@@ -78,7 +82,7 @@
 }
 
 #sectionCard p {
-	color: #56afe7;
+	color: #56AFE7;
 	height: 125%;
 	width: 100%;
 	font-family: 'GilroyExtraBold', sans-serif;
@@ -95,7 +99,7 @@
 }
 .lockScreenTime h1 {
 	font-size: 85px;
-	color: #56afe7;
+	color: #56AFE7;
 	font-family: 'GilroyExtraBold', sans-serif;
 }
 .lockScreenDate h1 {
@@ -242,8 +246,8 @@
 }
 
 #storyCard:hover p {
-	color: #ffffff;
-	background: linear-gradient(45deg, #0c243390, #1c71a590);
+	color: #FFFFFF;
+	background: linear-gradient(45deg, #0C243390, #1C71A590);
 	backdrop-filter: blur(8px);
 	border-radius: 10px;
 	visibility: visible;
@@ -292,8 +296,8 @@
 }
 
 #gamecard:hover p {
-	color: #ffffff;
-	background: linear-gradient(45deg, #0c243390, #1c71a590);
+	color: #FFFFFF;
+	background: linear-gradient(45deg, #0C243390, #1C71A590);
 	backdrop-filter: blur(8px);
 	border-radius: 10px;
 	visibility: visible;
@@ -347,7 +351,7 @@
 	border: none;
 }
 .navigation button:hover {
-	background: #3f81aa;
+	background: #3F81AA;
 }
 
 #myVideo {

@@ -1,6 +1,6 @@
 // == LOCKSCREEN QUIT START ========================================================================= //
 const { appWindow } = window.__TAURI__.window;
-document.getElementById('quitBtn').addEventListener('click', () => appWindow.close())
+document.getElementById('dialogCloseBtn').addEventListener('click', () => appWindow.close())
 // =========================================================================== LOCKSCREEN QUIT END == //
 
 

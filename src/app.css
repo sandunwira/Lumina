@@ -51,8 +51,8 @@ button {
 	font-size: medium;
 	padding: 10px 20px;
 	color: #ECECEC;
-	background: #56afe7;
-	border: 2px solid #56afe7;
+	background: #56AFE7;
+	border: 2px solid #56AFE7;
 	border-radius: 8px;
 	transition: 0.5s
 }
@@ -83,7 +83,7 @@ button:hover {
 	background: #242424;
 	border: 3px solid #6590BB;
 	border-radius: 10px;
-	filter: drop-shadow(0 0 30px #6590bb51);
+	filter: drop-shadow(0 0 30px #6590BB51);
 }
 .iframeControls {
 	display: flex;
@@ -112,7 +112,7 @@ abbr:hover {
 		box-shadow: none;
 	}
 	50% {
-		box-shadow: inset 0px 0px 500px #2f455a;
+		box-shadow: inset 0px 0px 500px #2F455A;
 	}
 	100% {
 		box-shadow: none;

@@ -1,6 +1,6 @@
 [package]
 name = "lumina"
-version = "1.1.0"
+version = "1.2.0"
 description = "An opensource app to achieve relaxation and mindfulness"
 authors = ["KoolApps Team"]
 license = "MIT"

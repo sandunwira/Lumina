@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="css/titlebar.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dialog.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
 
 	<script type="module" src="/main.js" defer></script>
@@ -20,6 +21,11 @@
 </head>
 
 <body>
+
+	<!-- DIALOG START ==================================================-->
+	<dialog id="closeDialog"></dialog>
+	<script src="js/closeDialog.js"></script>
+	<!--==================================================== DIALOG END -->
 
 	<!-- Header Start ==================================================-->
 	<div class="banner flexContainer flexCol" id="lockScreen">
@@ -42,7 +48,7 @@
 					<button id="playPauseBtn" title="Toggle Music On/Off" class="pause" oncontextmenu="window.location.reload();">
 						<i class="fa-solid fa-music"></i>
 					</button>
-					<button id="quitBtn" title="Quit">
+					<button id="quitBtn" title="Quit" onclick="closeDialog.showModal();">
 						<i class="fa-solid fa-power-off"></i>
 					</button>
 					<button id="loginBtn" title="Continue" onclick="window.location.href='./home.html'">

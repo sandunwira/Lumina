@@ -26,7 +26,7 @@ dialog {
 	height: 100%;
 }
 .dialogContainer p{
-	color: #9e9e9e;
+	color: #9E9E9E;
 	font-size: 10px;
 	text-align: justify;
 	text-align-last: center;
@@ -54,7 +54,7 @@ dialog {
 }
 .dialogTitle button:hover {
 	color: #ECECEC;
-	background: #ff1616;
+	background: #FF1616;
 	transition: 0.2s;
 }
 
@@ -63,7 +63,7 @@ dialog {
 }
 .dialogImg img {
 	height: 50px;
-	filter: drop-shadow(0 0 8px #78abd867);
+	filter: drop-shadow(0 0 8px #78ABD867);
 }
 
 .dialogDesc {
@@ -100,8 +100,43 @@ dialog {
 }
 
 .dialogFooter p {
-	color: #9e9e9e;
+	color: #9E9E9E;
 	font-size: 10px;
 	text-align: justify;
 	text-align-last: center;
+}
+
+
+
+
+#closeDialog {
+	height: 300px;
+}
+
+#closeDialog form{
+	width: 80%;
+}
+
+#closeDialog h1{
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+.closeButtons{
+	gap: 25px;
+}
+
+.closeButtons button{
+	outline: none;
+	width: 130px;
+	height: 45px;
+}
+
+
+#dialogCloseBtn:hover{
+	background: #bb1d0f;
+	border: 2px solid #ECECEC;
+	transition: 0.3s;
 }

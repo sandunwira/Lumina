@@ -34,7 +34,7 @@ function generateHTML() {
 	html += '<i class="fa-solid fa-window-minimize"></i>';
 	html += '</div>';
 
-	html += '<div class="icon" id="titlebar-close" title="Close">';
+	html += '<div class="icon" id="titlebar-close" title="Close" onclick="closeDialog.showModal();">';
 	html += '<i class="fa-solid fa-xmark"></i>';
 	html += '</div>';
 

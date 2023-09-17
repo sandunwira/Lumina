@@ -1,7 +1,7 @@
 var state = document.getElementById('state');
 
 function callback(data) {
-	state.innerHTML = '<h2 id="greetingLocation" class="greetingLocation">' + data.state + ', ' + data.country_code + '</h2>';
+	state.innerHTML = '<h2 id="greetingLocation" class="greetingLocation flexContainer flexRow"><i class="fa-solid fa-location-dot"></i>&nbsp;' + data.state + ', ' + data.country_code + '</h2>';
 }
 
 var script = document.createElement('script');

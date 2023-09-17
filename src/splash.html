@@ -11,14 +11,18 @@
 	<script type="module" src="/main.js" defer></script>
 
 	<link rel="preload" href="./assets/images/logo-text.svg" as="image" type="image/svg+xml">
+
+	<script>
+		document.addEventListener('contextmenu', function (event) {
+			event.preventDefault();
+		});
+	</script>
 </head>
 
 <body>
 
 	<div class="splashScreen flexContainer">
-
 		<img src="./assets/images/logo-text.svg">
-
 	</div>
 
 </body>
