@@ -104,3 +104,17 @@ abbr {
 abbr:hover {
 	cursor: help;
 }
+
+
+
+@keyframes loading {
+	0% {
+		box-shadow: none;
+	}
+	50% {
+		box-shadow: inset 0px 0px 500px #2f455a;
+	}
+	100% {
+		box-shadow: none;
+	}
+}

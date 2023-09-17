@@ -79,6 +79,20 @@
         "fullscreen": true,
         "title": "Lumina",
         "label": "main",
+        "url": "index.html",
+        "decorations": false,
+        "resizable": false,
+        "visible": false
+      },
+      {
+        "title": "Lumina",
+        "height": 250,
+        "width": 600,
+        "label": "splash",
+        "url": "splash.html",
+        "focus": true,
+        "center": true,
+        "skipTaskbar": false,
         "decorations": false,
         "resizable": false
       }
